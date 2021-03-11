@@ -21,6 +21,6 @@ while (guess !== randomNum) {
   attempts++
 }
 
-console.log(`You got it at ${attempts}`)
+console.log(`You got it at ${attempts} attempts`)
 
 

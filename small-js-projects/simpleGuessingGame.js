@@ -1,6 +1,3 @@
-
-
-
 let maxNum = parseInt(prompt("Enter a max number"));
 
 while (!maxNum) {
@@ -14,8 +11,8 @@ let guess = parseInt(prompt("Enter your guess number"))
 
 let attempts = 1; 
 
-while (guess !== maxNum) {
-  if (guess > maxNum) {
+while (guess !== randomNum) {
+  if (guess > randomNum) {
     guess = parseInt(prompt("Too big"))
   }
   else {
@@ -25,3 +22,5 @@ while (guess !== maxNum) {
 }
 
 console.log(`You got it at ${attempts}`)
+
+

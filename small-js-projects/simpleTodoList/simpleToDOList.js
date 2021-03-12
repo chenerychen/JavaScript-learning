@@ -7,7 +7,7 @@ array to keep info
 const todoList = []; 
 let input = prompt("What would you like to do?")
 
-while (input.trim().toLowerCase() !== 'quit' && input.toLowerCase() !== 'q') {
+while (input.trim().toLowerCase() !== 'quit' && input.toLowerCase() !== 'q') {   // We want to keep this while loop true until enconter q or quit to equal to false and break this while loop
 
    if  (input.trim().toLowerCase() === "new") {
        let add = prompt("Enter a new todo!") 

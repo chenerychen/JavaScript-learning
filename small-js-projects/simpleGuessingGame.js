@@ -6,21 +6,26 @@ while (!maxNum) {
 
 let randomNum = Math.floor(Math.random() * maxNum) + 1; 
 
-let guess = parseInt(prompt("Enter your guess number"))
-
+let guess = parseInt(prompt("Enter your guess number")) 
 
 let attempts = 1; 
 
-while (guess !== randomNum) {
-  if (guess > randomNum) {
-    guess = parseInt(prompt("Too big"))
+while (parseInt(guess) !== randomNum) {
+  if (guess === 'q') break 
+  
+  if (guess > randomNum) { 
+    guess = prompt("Too big")
   }
   else {
-    guess = parseInt(prompt("Too small"))
+    guess = prompt("Too small")
   }
+  
   attempts++
 }
 
-console.log(`You got it at ${attempts} attempts`)
-
+if (guess === 'q') {
+  console.log("You exited from the game")
+} else {
+  console.log(`You got it at ${attempts} attempts`)
+} 
 

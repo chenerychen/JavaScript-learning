@@ -1,5 +1,3 @@
-
-
 const player1Plus = document.querySelector("#player1Plus"); 
 const player2Plus = document.querySelector("#player2Plus"); 
 const reset = document.querySelector('#reset')

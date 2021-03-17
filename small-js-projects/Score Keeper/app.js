@@ -33,15 +33,22 @@ topScores.addEventListener("change", () => {
 function updateScores(first,second ) {
     if  (!isGameOver) {
         first.score += 1; 
-        if (first.score === winningScore) {
+        if ( first.score > winningScore && first.score - second.score >= 2) {
             isGameOver = true;
             first.display.classList.add('has-text-success');
             second.display.classList.add("has-text-danger");
             first.button.disabled = true; 
             second.button.disabled = true; 
-            
+        } 
+        else if ( first.score ===  winningScore && first.score - second.score > 2 ){ 
+            isGameOver = true;
+            first.display.classList.add('has-text-success');
+            second.display.classList.add("has-text-danger");
+            first.button.disabled = true; 
+            second.button.disabled = true; 
         }
     }
+
     first.display.textContent = first.score; 
 }
 

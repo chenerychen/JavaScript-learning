@@ -39,6 +39,7 @@ function updateScores(first,second ) {
             second.display.classList.add("has-text-danger");
             first.button.disabled = true; 
             second.button.disabled = true; 
+            
         }
     }
     first.display.textContent = first.score; 

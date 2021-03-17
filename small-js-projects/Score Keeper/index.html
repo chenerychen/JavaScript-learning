@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <title>Score keeper</title>
+    <!-- <style>
+        .winner {
+            color: yellowgreen; 
+        }
+        .loser {
+            color: red; 
+        }
+    </style> -->
+</head>
+<body>
+    <section class="section">
+        <div class='container'>
+            <div class='columns'>
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card-image">
+                        <figure class='image is-2by1'> 
+                            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/0519/KpvbauGtIxTmckF1Q2BOWDTM.jpg" alt="">
+                        </figure>
+                        <div class="card"></div>
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            Ping Pong Score Keeper
+                          </p>
+
+                        </header>
+                        <div class="card-content">
+                          <div class="content">
+                            <h1 class="title is-1"><span id='p1Scores'>0</span> to <span id='p2Scores'>0</span></h1>
+                            <p class="subtitle">User the buttons below to track the scores!</p>
+
+                            <label for="topScores" class='label is-large is-inline'>Playing To </label>
+                            <div class="select is-rounded">
+                                <select name="" id="topScores">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+                          </div>
+                        </div>
+                        <footer class="card-footer">
+                          <button class="is-primary button card-footer-item is-large"  id='player1Plus'> +1 Player One </button>
+                          <button class="is-info button card-footer-item is-large"  id='player2Plus'> +2 Player One </button>
+                          <button class="is-danger button card-footer-item is-large"  id='reset'> Reset </button>
+                        </footer>
+                      </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+        <!-- <header>Ping Pong Score Keep</header> -->
+        <!-- <h1> <span id='p1Scores'>0</span> to <span id='p2Scores'>0</span></h1> -->
+        <!-- <p>Use the buttons blow to keep score.</p> -->
+        <!-- <select name="" id="topScores">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select> -->
+        <!-- </span></h2>  -->
+
+        <!-- <button id='player1Plus'> +1 Player One</button> -->
+        <!-- <button id='player2Plus'> + 2 Player Two</button>
+        <button id='reset'> Reset </button> -->
+
+</body>
+<script src='app.js'></script>
+</html>

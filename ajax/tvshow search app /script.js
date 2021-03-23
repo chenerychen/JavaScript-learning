@@ -15,8 +15,6 @@ form.addEventListener('submit', async (e) => {
     // document.body.append(img)
 })
 
-
-
 const displayImages = (shows) => {
     for (let result of shows) {
         if  (result.show.image) {
